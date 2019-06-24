@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/mainSearchFragment">
+
+    <fragment
+        android:id="@+id/mainSearchFragment"
+        android:name="com.android.gangplank.wikisearchcount.MainSearchFragment"
+        android:label="fragment_main_search"
+        tools:layout="@layout/fragment_main_search" >
+        <action
+            android:id="@+id/action_mainSearchFragment_to_searchHistoryFragment"
+            app:destination="@id/searchHistoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchHistoryFragment"
+        android:name="com.android.gangplank.wikisearchcount.SearchHistoryFragment"
+        android:label="fragment_search_history"
+        tools:layout="@layout/fragment_search_history" />
+</navigation>
